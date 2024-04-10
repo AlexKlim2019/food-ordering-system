@@ -19,7 +19,7 @@ public abstract class OrderEvent implements DomainEvent<Order> {
         return order;
     }
 
-    public ZonedDateTime getCreateAt() {
+    public ZonedDateTime getCreatedAt() {
         return createAt;
     }
 }
