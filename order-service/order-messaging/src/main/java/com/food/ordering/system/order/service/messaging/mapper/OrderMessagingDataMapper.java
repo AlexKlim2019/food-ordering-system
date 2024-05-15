@@ -77,4 +77,13 @@ public class OrderMessagingDataMapper {
                 .setCreatedAt(orderApprovalEventPayload.getCreatedAt().toInstant())
                 .build();
     }
+
+    public CustomerModel customerAvroModeltoCustomerModel(CustomerAvroModel customerAvroModel) {
+        return CustomerModel.builder()
+                .id(customerAvroModel.getId())
+                .username(customerAvroModel.getUsername())
+                .firstName(customerAvroModel.getFirstName())
+                .lastName(customerAvroModel.getLastName())
+                .build();
+    }
 }
