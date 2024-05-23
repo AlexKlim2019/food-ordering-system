@@ -2,6 +2,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+/infrastructure/docker-compose/volumes/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
