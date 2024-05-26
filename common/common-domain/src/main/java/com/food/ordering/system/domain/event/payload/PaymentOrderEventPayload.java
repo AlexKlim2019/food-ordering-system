@@ -13,24 +13,19 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 public class PaymentOrderEventPayload {
+
     @JsonProperty
     private String paymentId;
-
     @JsonProperty
     private String customerId;
-
     @JsonProperty
     private String orderId;
-
     @JsonProperty
     private BigDecimal price;
-
     @JsonProperty
     private ZonedDateTime createdAt;
-
     @JsonProperty
     private String paymentStatus;
-
     @JsonProperty
     private List<String> failureMessages;
 }
