@@ -1,0 +1,4 @@
+Change Data Capture Pessimistic Locking:
+300 records -> 15 secs
+1500 records -> 99 secs
+3000 records -> 220 secs

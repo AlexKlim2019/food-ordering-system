@@ -2,9 +2,9 @@ package com.food.ordering.system.payment.service.dataaccess.outbox.entity;
 
 import com.food.ordering.system.domain.valueobject.PaymentStatus;
 import com.food.ordering.system.outbox.OutboxStatus;
+import jakarta.persistence.*;
 import lombok.*;
 
-import javax.persistence.*;
 import java.time.ZonedDateTime;
 import java.util.Objects;
 import java.util.UUID;
@@ -31,6 +31,7 @@ public class OrderOutboxEntity {
     private PaymentStatus paymentStatus;
     @Version
     private int version;
+
 
     @Override
     public boolean equals(Object o) {
